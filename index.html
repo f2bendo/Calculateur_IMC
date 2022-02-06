@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Calculateur d'IMC</title>
+</head>
+<body>
+
+    <div id="background">
+    <p id="titre">Calculateur d'IMC</p>
+
+    <div id="introimg">
+    <img src="./assets/img/imc.png" alt="imc">
+    <p id="intro">L’indice de masse corporelle (IMC) permet d’évaluer rapidement votre corpulence simplement avec votre poids et votre taille, quel que soit votre sexe. Calculez rapidement votre IMC et découvrez dans quelle catégorie vous vous situez.
+        <br><br>
+        L’indice de masse corporelle (IMC) est le seul indice validé par l’Organisation mondiale de la santé pour évaluer la corpulence d’un individu et donc les éventuels risques pour la santé. L’IMC permet de déterminer si l’on est situation de maigreur, de surpoids ou d’obésité par exemple.</p>
+        
+
+
+    </div>
+    
+    <div id="form">
+    <p id="p1">Entrez votre poids (kg) : </p>
+    <input type="text" id="poids" placeholder="Poids">
+    <p>Entrez votre taille (cm) : </p>
+    <input type="text" name="taille" id="taille" placeholder="taille">
+    <p>Entre votre âge : </p>
+    <input type="text" id="age" placeholder="age">
+    <br> <br>
+    <input type="submit" name="envoyer" value="Calculer mon IMC !" id="submit">
+    
+    <p id="result">Votre IMC est de : </p>
+    </div>
+    <br> <br>
+
+    <p></p>
+
+    <div id="tableau">
+    <table class="tableau">
+        <caption style="font-family: Raleway, sans-serif">Correspondance</caption>
+        <thead>
+        <tr class ="titres">
+        <th class ="indice">IMC (valeur)</th>
+        <th class="interpretation">Interpretation</th>
+        </tr>
+        </thead>
+
+        <tr>
+            <td id="anoChiffre" class ="indice">Moins de 18,5</td>
+            <td id="ano" class="interpretation">Insuffisance pondérale</td>
+        </tr>
+
+        <tr>
+
+            <td id ="normaleChiffre" class ="indice">18,5 à 25</td>
+            <td  id="normale" class="interpretation">Corpulence normale</td>
+        </tr>
+
+        <tr>
+
+            <td id ="surpoidsChiffre" class ="indice">25 à 30</td>
+            <td id ="surpoids" class="interpretation">Surpoids</td>
+        </tr>
+
+        <tr>
+
+            <td id ="obesmodChiffre" class ="indice">30 à 35</td>
+            <td id ="obesmod" class="interpretation">Obésité modérée</td>
+        </tr>
+
+        <tr>
+
+            <td id ="obeseverChiffre" class ="indice">35 à 40</td>
+            <td id="obesever" class="interpretation">Obésité sévère</td>
+        </tr>
+
+        <tr>
+
+            <td id="obesmorbChiffre" class ="indice">Plus de 40</td>
+            <td id="obesmorb" class="interpretation">Obésité morbide ou massive</td>
+        </tr>
+    </table>
+</div>
+
+    <script src="./assets/script.js"></script>
+</div>
+</body>
+</html>
